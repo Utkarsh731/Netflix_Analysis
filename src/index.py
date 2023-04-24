@@ -5,7 +5,6 @@ def index_handler(df):
     movie_count = df[df["type"] == "MOVIE"].shape[0]
     show_count = df[df["type"] == "SHOW"].shape[0]
     movie_show_response = [{"type":"MOVIE","total":movie_count, "color":"#E50914"},{"type":"SHOW","total":show_count,"color":"#430000"}]
-    print(movie_show_response)
     # Filter the "type" column to only include "MOVIE" and "SHOW"
     df_filtered = df[df['type'].isin(['MOVIE', 'SHOW'])]
 
