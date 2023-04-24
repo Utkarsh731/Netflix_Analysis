@@ -31,7 +31,7 @@ width: 100%;
 }
 #left {
 float:left;
-  height: 500px;
+  height: 1000px;
   border: 2px solid white;
   width: 50%;
   left: 0;
@@ -40,7 +40,7 @@ float:left;
 float:right;
 border: 2px solid white;
 height: 500px;
-width: 100%;
+width: 50%;
   right: 0;
 }
 
@@ -89,6 +89,14 @@ width: 100%;
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </div>
   <div id="main">
+      <div id="left">
+          <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+          <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+          <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+          <script src="https://cdn.amcharts.com/lib/5/themes/Dark.js"></script>
+          <script type="text/javascript">var data={{yearwise_barchart_response|tojson}}</script>
+          <script src="/static/js/year_wise_bar_chart.js"></script>
+      </div>
       <div id="right">
           <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
           <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
